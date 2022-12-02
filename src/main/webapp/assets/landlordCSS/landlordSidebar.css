@@ -1,0 +1,199 @@
+.app_sidebar{
+    color: #fff;
+
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    background-color: #343a3f;
+    box-shadow: 9px 10px 23px rgba(0, 0, 0, 0.3);
+}
+.app_sidebar .sidebar_list{
+    height: 100%;
+    width: 100px;
+    color: #fff;
+    overflow: hidden;
+}
+.app_sidebar .sidebar_list.active{
+    width: 240px;
+}
+.app_sidebar .sidebar_list-content{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+
+    /* height: 100%; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.app_sidebar .sidebar_item:not(:first-child) {
+    margin: 32px 0 32px 10px;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    transition: unset;
+    animation: unset;
+}
+.app_sidebar .sidebar_item a{
+    position: relative;
+    display: flex;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+.app_sidebar .sidebar_item:hover:not(:first-child)::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: -20px;
+    right: 10px;
+    background-color: transparent;
+    border-bottom-right-radius: 20px;
+    box-shadow: 7.5px 7.5px 0 7.5px #fff;
+    position: absolute;
+}
+.app_sidebar .sidebar_item:hover:not(:first-child)::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom: -20px;
+    right: 10px;
+    background-color: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 7.5px -7.5px 0 7.5px #fff;
+    position: absolute;
+}
+.app_sidebar .sidebar_item:hover:not(:first-child){
+    background-color: #fff;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.app_sidebar .sidebar_item:not(:first-child):hover a{
+    color: #5392fa;
+    opacity: unset;
+}
+.app_sidebar .sidebar_item.logo_img {
+    /* width: 80%; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.app_sidebar .sidebar_item.logo_img img{
+    /* width: 100%; */
+    border-radius: 50%;
+    height: 80px;
+}
+
+.app_sidebar .sidebar_list .sidebar_bottom-btn{
+    position: absolute;
+    bottom: 50px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.app_sidebar .sidebar_list .sidebar_bottom-btn::before{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    border: 3px;
+    background-color: #ccc;
+    transform: translateY(-5px);
+    transition: 0.3s;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.app_sidebar .sidebar_list .sidebar_bottom-btn::after{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #ccc;
+    transform: translateY(5px);
+    transition: 0.3s;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.app_sidebar .active .sidebar_bottom-btn::before{
+    transform: translateY(0px) rotate(-405deg);
+}
+.app_sidebar .sidebar_list.active .sidebar_bottom-btn::after{
+    transform: translateY(0px) rotate(405deg);
+}
+.app_sidebar .sidebar_item.active{
+    background-color: #fff;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.app_sidebar .sidebar_item.active a{
+    color: #5392fa;
+    opacity: unset;
+}
+.app_sidebar .sidebar_item.active:not(:first-child)::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: -20px;
+    right: 10px;
+    background-color: transparent;
+    border-bottom-right-radius: 20px;
+    box-shadow: 7.5px 7.5px 0 7.5px #fff;
+    position: absolute;
+}
+.app_sidebar .sidebar_item.active:not(:first-child)::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom: -20px;
+    right: 10px;
+    background-color: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 7.5px -7.5px 0 7.5px #fff;
+    position: absolute;
+}
+
+.sidebar_list ul li a i{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 10px;
+}
+.sidebar_list ul li a .sidebar_item-name{
+    position: relative;
+    display: block;
+    padding: 0 12px;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 400 !important;
+    white-space: nowrap;
+}
+
+.app_body{
+    position: relative;
+    top: 80px;
+    margin-left: 100px;
+    /* background-color: rgba(240, 133, 172, 0.25); */
+    height: 100%;
+
+}

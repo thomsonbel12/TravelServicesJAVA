@@ -1,0 +1,106 @@
+.app__body .left-menu-cart-list {
+    background-color: unset;
+    border-right: unset;
+    font-weight: unset;
+}
+
+.app__body .left-menu-cart-list a {
+    color: #5392fa;
+}
+
+.app__body .left-menu-history-list {
+    background-color: #f8f7f9;
+    border-right: 4px solid #5392fa;
+    font-weight: 700;
+}
+
+.app__body .left-menu-history-list a {
+    color: #333;
+}
+
+.app__myHistory .app__header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.app__myHistory .app__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 24px; */
+    font-size: 18px;
+    padding-left: 18px;
+
+    min-height: 600px;
+    align-items: unset;
+    color: #5392fa;
+    position: relative;
+    top: 77px;
+}
+.app__myHistory .app__body .option-right-text{
+    width: 30%;
+}
+.app__myHistory  .header-option-right{
+    width: 50% !important;
+}
+.bill-rooms input:hover{
+    background-color: unset !important;
+}
+.bill-rooms .input-date-wrap:hover{
+    background-color: unset !important;
+}
+.app__myHistory .bill-rooms{
+    margin-left: 100px;
+    transition: 0.5s;
+}
+.bill-rooms .input-people-room-text{
+    cursor: default !important;
+
+}
+.bill-rooms .input-people-room-text:hover{
+    background-color: unset !important;
+
+}
+.bill-rooms .input-people{
+    width: unset;
+    cursor: default !important;
+}
+.app__myHistory .bill-info{
+    width: 100%;
+    border: 4px solid #1569f0;
+    border-radius: 10px;
+    position: relative;
+
+}
+.app__myHistory .bill-info .bill-info_orderDate{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.app__myHistory .bill-info > i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 44px;
+    background-color: #1569f0;
+    color: #f8f7f9;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.app__myHistory .bill-info:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.app__myHistory .bill-info > i:hover{
+    background-color: #508ff4;
+}
+
+.bill-info .bill-info_detail ul{
+    margin: 0 0 12px 70px;
+    list-style: disc;
+}
